@@ -37,3 +37,15 @@ body {
     rgba(0, 0, 0, 0.79) 99.97%
   );
 }
+
+.coming-soon-text {
+  font-weight: bold;
+  background-image: url("../public/images/comingSoonBG.png");
+  background-position: center 80%;
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Home/Hero";
 import DeliveredProjects from "./components/Home/DeliveredProjects";
 import BentoGrid from "./components/Home/BentoGrid";

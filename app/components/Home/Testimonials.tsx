@@ -3,13 +3,15 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
 const Testimonials = () => {
-  const swiperRef = useRef(null);
+  // const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const slides = [
     {
       text: "Lorem ipsum dolor sit amet consectetur. Tincidunt iaculis luctus leo in mattis sagittis facilisi adipiscing. Scelerisque scelerisque consect.Lorem ipsum dolor sit amet consectetur. Tincidunt iaculis luctus leo in mattis sagittis facilisi adipiscing. Scelerisque scelerisque consect.",
@@ -54,7 +56,7 @@ const Testimonials = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="border-r border-dotted">
-              {({ isActive, isNext }) => (
+              {({ isNext }) => (
                 // <div className="mb-8">
                 <div
                   className={`pr-8 pb-8 transition-opacity duration-300 ${
@@ -63,7 +65,9 @@ const Testimonials = () => {
                 >
                   <p className="text-lg mb-6">{slide.text}</p>
                   <div className="flex items-center">
-                    <img
+                    <Image
+                      height={12}
+                      width={12}
                       src="/images/testimonialProfile.png"
                       alt="Author"
                       className="w-12 h-12 rounded-full mr-4"

@@ -27,7 +27,7 @@ const page = () => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14970.089404721462!2d85.8676425!3d20.278635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a0a1b9d5e4f7%3A0x858f50399fbcd038!2sBraynix%20AI!5e0!3m2!1sen!2sin!4v1729076370214!5m2!1sen!2sin"
               className="w-full h-[300px] lg:h-[700px] rounded-2xl"
               style={{ border: 0 }}
-              allowFullScreen=""
+              //   allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -37,7 +37,7 @@ const page = () => {
             <div className="space-y-3">
               <h3 className="text-3xl lg:text-5xl font-bold">Message Us</h3>
               <p className="text-sm lg:text-base">
-                We'll get back to you within 24 hours
+                We&apos;ll get back to you within 24 hours
               </p>
             </div>
 
@@ -87,13 +87,13 @@ const page = () => {
                 <textarea
                   className="textarea w-full bg-opacity-10 bg-white"
                   placeholder="How can we help?"
-                  rows="4"
+                  rows={4}
                 ></textarea>
               </div>
 
               <div>
                 <button className="btn w-full bg-[#4394EA] text-white hover:bg-[#4394eabc]">
-                  Let's Talk
+                  Let&apos;s Talk
                 </button>
               </div>
 

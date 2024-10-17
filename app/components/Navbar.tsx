@@ -29,7 +29,16 @@ const Navbar = () => {
         >
           About Us
         </Link>
-        <Link href="/products">Products</Link>
+        <Link
+          href="/products"
+          className={
+            pathname === "/products"
+              ? "text-[#00EEFF]"
+              : "hover:text-[#00EEFF] transition-all ease-in-out duration-300"
+          }
+        >
+          Products
+        </Link>
         <Link
           href="/services"
           className={
@@ -50,7 +59,16 @@ const Navbar = () => {
         >
           Careers
         </Link>
-        <Link href="/research">Research</Link>
+        <Link
+          href="/research"
+          className={
+            pathname === "/research"
+              ? "text-[#00EEFF]"
+              : "hover:text-[#00EEFF] transition-all ease-in-out duration-300"
+          }
+        >
+          Research
+        </Link>
         <Link
           href="/contact"
           className={
