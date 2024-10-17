@@ -12,7 +12,7 @@ type TCContextType = {
   registerSection: (_: Section) => void;
   activeSection: number;
   setActiveSection: (_: number) => void;
-  scrollContainerRef: RefObject<HTMLElement> | null;
+  scrollContainerRef: RefObject<HTMLElement> | undefined;
 };
 
 export const TCContext = createContext<TCContextType>({
@@ -20,7 +20,7 @@ export const TCContext = createContext<TCContextType>({
   registerSection: () => {},
   activeSection: 0,
   setActiveSection: () => {},
-  scrollContainerRef: null,
+  scrollContainerRef: undefined,
 });
 
 export const useTCContextValues = () => {

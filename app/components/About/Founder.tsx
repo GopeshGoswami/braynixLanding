@@ -19,15 +19,15 @@ const Founder = () => {
       <div className="space-y-5">
         <h2 className="text-3xl md:text-5xl">Founder&apos;s Note</h2>
         <p className="text-sm md:text-xl">
-          "As the founder of Braynix AI, I am proud to lead a team of talented
-          individuals who are dedicated to using cutting-edge artificial
-          intelligence technologies to solve real-world problems. Our mission is
-          to empower businesses and organizations with the tools they need to
-          improve their operations and achieve their goals. Whether you need to
-          automate processes, gain new insights, or develop custom solutions,
-          Braynix AI is here to help you succeed. I believe that the future is
-          AI, and I am confident that our team will continue to play a major
-          role in shaping that future for the better."
+          &quot;As the founder of Braynix AI, I am proud to lead a team of
+          talented individuals who are dedicated to using cutting-edge
+          artificial intelligence technologies to solve real-world problems. Our
+          mission is to empower businesses and organizations with the tools they
+          need to improve their operations and achieve their goals. Whether you
+          need to automate processes, gain new insights, or develop custom
+          solutions, Braynix AI is here to help you succeed. I believe that the
+          future is AI, and I am confident that our team will continue to play a
+          major role in shaping that future for the better.&quot;
         </p>
         <div>
           <p className="text-[#4484FF] text-xl md:text-3xl">Amitabh Das</p>

@@ -1,6 +1,6 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext } from "react";
 import { TCContext } from "./TCContext";
 
 const TableContents = () => {

@@ -26,7 +26,7 @@ const TrackedSection = ({
       text: tcText,
       isLast: isLast,
     });
-  }, []);
+  }, [isLast, sectionId, tcTitle, tcText]);
 
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
